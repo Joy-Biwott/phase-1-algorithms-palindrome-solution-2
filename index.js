@@ -1,9 +1,9 @@
 function isPalindrome(word) {
   // Write your algorithm here
   // iterate from the beginning of the string to the middle of the string
-  for (let i=0; i<word.length/2; i++){
-    const j = word.length -1 -i;
-    if(word[i] !== word[j]){
+  for (let startIndex=0; startIndex<word.length/2; startIndex++){
+    const endIndex = word.length -1 -i;
+    if(word[startIndex] !== word[endIndex]){
       return false;
     }
     return true;
